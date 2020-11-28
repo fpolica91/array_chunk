@@ -1,24 +1,38 @@
 
 
 
+// function capitalize(str){
+//   let result =  ""
+
+//     for(let i =0; i < str.length; i++){
+
+//      if(str[i-1] === " " && i !== 0){
+//         result += "" + str[i].toUpperCase()
+//         console.log('i am result 1', result, i)
+//       }
+
+//       else if(str[i] && i===0 ){
+//         result = str[0].toUpperCase()
+//         console.log('i am result 2', result, i)
+//       }
+//        else result += str[i]
+//        console.log('i am result 3', result, i)
+//     }
+//     return result;
+// }
+
+
 function capitalize(str){
-  let result =  ""
-
-    for(let i =0; i < str.length; i++){
-
-     if(str[i-1] === " " && i !== 0){
-        result += "" + str[i].toUpperCase()
-        console.log('i am result 1', result, i)
-      }
-
-      else if(str[i] && i===0 ){
-        result = str[0].toUpperCase()
-        console.log('i am result 2', result, i)
-      }
-       else result += str[i]
-       console.log('i am result 3', result, i)
+  let results = str[0].toUpperCase();
+  for(let i = 0; i < str.length; i++){
+  if(str[i - 1] === ' '){
+    results += str[i].toUpperCase()
+   }else if(str[i - 1] !== ' ' && i !==0){
+      results += str[i]
     }
-    return result;
+  }
+
+  return results;
 }
 
 
@@ -35,9 +49,9 @@ function caps(str){
   return words.join(' ')
 }
 
-console.log(caps("hi there, how is it going?"));
+// console.log(caps("hi there, how is it going?"));
 
-// console.log(capitalize("a short sentence"))
+console.log(capitalize('a short sentence'))
 // console.log(capitalize("a lazy fox"))
 // console.log(capitalize("look it is working!"))
 
