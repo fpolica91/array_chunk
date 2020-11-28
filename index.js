@@ -1,6 +1,8 @@
 // const chunking = require('./problems/array_chunk.js')
 const chunk = require('./problems/array_chunk_second.js')
 const anagrams = require('./problems/anagrams_2.js')
+const capitalize = require('./problems/capitalization')
+
 
 // const array = [1,2,3,4,5,6]
 
